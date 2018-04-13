@@ -50,7 +50,7 @@ function main()
 			x_not = 1;
 			function f_x(x)
 			{
-				f = this.c2_not*this.c3_not + this.c2_not*this.v3*x + this.v2*this.c3_not*x + this.v2*this.v3*x**2 - this.Ka*this.c1_not + this.Ka*this.v1*x;
+				f = this.c2_not*this.c3_not + this.c2_not*this.v3*x + this.v2*this.c3_not*x + this.v2*this.v3*Math.pow(x,2) - this.Ka*this.c1_not + this.Ka*this.v1*x;
 				return f;
 			}
 			
@@ -68,7 +68,7 @@ function main()
 		
 		function get_pX()
 		{
-			return -math.log10(this.get_x());
+			return -Math.log10(this.get_x());
 		}
 
 		function set_Ka(Ka)
@@ -107,4 +107,3 @@ function main()
 		}
 	}
 }
-
