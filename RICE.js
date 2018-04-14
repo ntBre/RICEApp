@@ -1,3 +1,7 @@
+$(document).ready(function(){
+    console.log("Hello");
+});
+
 function RICE(Ka, c1_not, c2_not, c3_not, v1, v2, v3) 
 { 
 	this.Ka = Ka;
@@ -107,6 +111,4 @@ function RICE(Ka, c1_not, c2_not, c3_not, v1, v2, v3)
 	}
 }
 
-$(document).ready(function(){
-    console.log("Hello");
-});
+
