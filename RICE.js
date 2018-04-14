@@ -1,6 +1,19 @@
 $(document).ready(function(){
     console.log("Hello");
+    
+    $("#button").click(function(){
+        var ka = $("#Ka").val();
+        var c1 = $("#c1_not").val();
+        var c2 = $("#c2_not").val();
+        var c3 = $("#c1_not").val();
+        var v1 = $("#v1").val();
+        var v2 = $("#v2").val();
+        var v3 = $("#v3").val();
+        console.log(ka, c1, c2, c3, v1, v2, v3);
+    });
 });
+
+
 
 function RICE(Ka, c1_not, c2_not, c3_not, v1, v2, v3) 
 { 
