@@ -106,3 +106,7 @@ function RICE(Ka, c1_not, c2_not, c3_not, v1, v2, v3)
 		this.v3 = v3;
 	}
 }
+
+$(document).ready(function(){
+    console.log("Hello");
+});
