@@ -48,17 +48,17 @@ function RICE(Ka, c1_not, c2_not, c3_not, v1, v2, v3)
 		var x_not = 1;
 		function f_x(x)
 		{
-			var f = this.c2_not*this.c3_not + this.c2_not*this.v3*x + this.v2*this.c3_not*x + this.v2*this.v3*Math.pow(x,2) - this.Ka*this.c1_not + this.Ka*this.v1*x;
+			var f = this.c2_not * this.c3_not + this.c2_not * this.v3 * x + this.v2 * this.c3_not * x + this.v2 * this.v3 * Math.pow(x,2) - this.Ka * this.c1_not + this.Ka * this.v1 * x;
 			return f;
 		}
 		
 		function f_prime(x)
 		{
-			var f1 = this.c2_not*this.v3 + this.c3_not*this.v2 + 2*this.v2*this.v3*x + this.Ka*this.v1;
+			var f1 = this.c2_not * this.v3 + this.c3_not * this.v2 + 2 * this.v2 * this.v3 * x + this.Ka * this.v1;
 			return f1;
 		}
 		var x_one = 1 - (f_x(1)/f_prime(1));
-		while (f_x(x_one) > 0.0000000000000001)
+		while (f_x(x_one) > 1e-16)
 			{
 			x_one = x_not - (f_x(x_not)/f_prime(x_not));
 			x_not = x_one;
