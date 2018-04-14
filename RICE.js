@@ -9,7 +9,7 @@ $(document).ready(function(){
         var v1 = $("#v1").val();
         var v2 = $("#v2").val();
         var v3 = $("#v3").val();
-        console.log(ka, c1, c2, c3, v1, v2, v3);
+        $("#output").append("<p>" + ka + c1 + c2 + c3 + v1 + v2 + v3 + "</p>");
     });
 });
 
